@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Info</title>
+<style>
+  :root{
+    --ink: #1f2624;
+    --paper: #f6f4ee;
+    --card: #ffffff;
+    --line: #d8d3c4;
+    --accent: #be830e;
+    --accent-soft: #e4efe9;
+    --muted: #6b6f6a;
+    --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-mono: 'SF Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 18px 60px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 460px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(31,38,36,0.04);
+  }
+
+  /* Top tag / eyebrow strip — the signature element */
+  .tag {
+    background: var(--accent);
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 9px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tag span:last-child { opacity: 0.75; }
+
+  .content {
+    padding: 30px 26px 32px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 14.5px;
+    color: var(--muted);
+    margin: 0 0 26px;
+    line-height: 1.5;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px dashed var(--line);
+    margin: 0 0 24px;
+  }
+
+  ul.points {
+    list-style: none;
+    margin: 0 0 6px;
+    padding: 0;
+  }
+
+  ul.points li {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  ul.points li:last-child { border-bottom: none; }
+
+  ul.points li .mark {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 6px;
+  }
+
+  ul.points li .text strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  ul.points li .text span {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer a:hover { text-decoration: underline; }
+
+  /* CTA button — optional, delete if not needed */
+
+
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="tag">
+    <span>visitor Info</span>
+
+  </div>
+
+  <div class="content">
+    <!-- EDIT: main heading and short subtitle -->
+    <h1>Welcome to the School of Philosophy!</h1>
+
+    <hr class="divider">
+
+    <!-- EDIT: replace these list items with your own -->
+    <ul class="points">
+      <li>
+        <span class="mark"></span>
+        <span class="text">
+          <strong>Offices and Cards</strong>
+          <span>Please see the admin office on the 2nd floor, left as you turn out of the elevator</span>
+        </span>
+      </li>
+      <li>
+        <span class="mark"></span>
+        <span class="text">
+          <strong>Tea</strong>
+          <span>Every day except Tuesday at 3:30 in the tea lounge (6.58). Help yourself to mugs and tea from the kitchen</span>
+        </span>
+      </li>
+      <li>
+        <span class="mark"></span>
+        <span class="text">
+          <strong>Talk announcement list</strong>
+          <span>Follow the instructions on the pinned post at <a href="https://groups.google.com/g/anu-philosophy">https://groups.google.com/g/anu-philosophy</a></span><br>
+        </span>
+      </li>
+      <li>
+        <span class="mark"></span>
+        <span class="text">
+          <strong>Local announcement list</strong>
+          <span>If you're here long enough to have an ANU UID, contact <a href="mailto:Colin.Klein@anu.edu.au">Colin.Klein@anu.edu.au</a> to be added to local.philsoc</p>
+        </span>
+      </li>
+      <li>
+        <span class="mark"></span>
+        <span class="text">
+          <strong>Talks</strong>
+          <span>There are typically talks at 3:00 on Tuesdays in 6.71 and 3:30 Thursdays downstairs in the auditorium. Join the mailing list for details!</span>
+        </span>
+      </li>
+
+
+    <li>
+      <span class="mark"></span>
+      <span class="text">
+        <strong>More Questions?</strong>
+        <span>Email the visitor coordinator, <a href="mailto:bronwyn.finnigan@anu.edu.au">bronwyn.finnigan@anu.edu.au</a></span>
+      </span>
+    </li>
+    </ul>
+
+
+    <div class="footer">
+      <span>Welcome to the School of Philosophy!</span>
+      <a href="https://philosophy.cass.anu.edu.au">https://philosophy.cass.anu.edu.au</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
